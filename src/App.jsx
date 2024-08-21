@@ -96,14 +96,14 @@ export default App
 {/* //         return(
 //           <div key={eachRecipe.id}>
             
-//             <MainHeading heading={eachRecipe.name} />
-//             <CustomImage source={eachRecipe.image} width={200} height={200}/>
-//             <SecondHeading heading={"ingredients required"}/>
-//             <CustomList list={eachRecipe.ingredients}/>
-//             <SecondHeading heading={"instructions required"}/>
-//             <CustomList list={eachRecipe.instructions}/>
-//             <CustomButton text={"start preparation"}/>
-//             </div>
+            <MainHeading heading={eachRecipe.name} />
+            <CustomImage source={eachRecipe.image} width={200} height={200}/>
+            <SecondHeading heading={"ingredients required"}/>
+            <CustomList list={eachRecipe.ingredients}/>
+            <SecondHeading heading={"instructions required"}/>
+            <CustomList list={eachRecipe.instructions}/>
+            <CustomButton text={"start preparation"}/>
+            </div>
 //         );
 //       })
 //     }
