@@ -1,9 +1,9 @@
 import CustomRectangleCard from "./custom-card"
 
-const Firstcomponent=()=>{
-    return(
 
 
+const FirstComponent =()=>{
+    return (
         <>
   <div className="container-fluid p-5 bg-primary text-white text-center">
     <h1>My First Bootstrap Page</h1>
@@ -12,33 +12,21 @@ const Firstcomponent=()=>{
   <div className="container mt-5">
     <div className="row">
       <div className="col-sm-4">
-       <CustomRectangleCard title={"john"} text={"React developer"}/>
-      </div>
-      <div className="col-sm-4">
-
-      <CustomRectangleCard title={"michael"} text={"angular developer"}/>
+        <CustomRectangleCard title={"John"} text={"React developer"}   />
         
       </div>
       <div className="col-sm-4">
-
-      <CustomRectangleCard title={"michael"} text={"angular developer"}/>
-
+      <CustomRectangleCard title={"Micheal"} text={"Angular developer"}   />
         
-
-
         
-
-       
+      </div>
+      <div className="col-sm-4">
+      <CustomRectangleCard title={"Micheal"} text={"Angular developer"}   />
       </div>
     </div>
   </div>
 </>
 
-
-
-
-
-
     )
 }
-export default Firstcomponent
+export default FirstComponent
