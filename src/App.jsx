@@ -9,6 +9,12 @@ import CustomTable from "./components/table/table.jsx"
 import Hari from "./components/button/button.jsx"
 import { recipeData } from "./components/data/recipedata.js"
 import { Greeting } from "./components/greeting/greeting.jsx"
+import CustomButton from "./components/button/button.jsx"
+import "./app.css"
+import style from "./components/greeting/greeting.module.css"
+import CustomRectangleCard from "./components/bootsrap/custom-card.jsx"
+import { employeeDetails } from "./components/data/employeeDetails.js"
+import Firstcomponent from "./components/bootsrap/first-component.jsx"
 
 
 
@@ -17,38 +23,17 @@ import { Greeting } from "./components/greeting/greeting.jsx"
 const App=()=>{
   
   return(
+    <Firstcomponent/>
    
-   <>
-   {
-   [{name:"hari",role:"software developer"},{name:"jaya",role:"business man"},{name:"satish",role:"software manager"}].map(eachName=>{
-    const {name,role}=eachName
-    return(
-    <Greeting text={`i am ${role}`}>{"This is " +(name)}</Greeting>
-      )
-
-   })
-   }
-
-   <Hari/>
-   <Krishna/>
-   <h4>changes are made</h4>
-
-
-
-
-      
-      
-        
-        
-
-               
-
-    </>
+ 
     )
 
 
 
 }
+
+
+
            
 
        
@@ -58,7 +43,70 @@ const App=()=>{
 
               
 
-export default App  
+export default App 
+
+
+
+
+// React bootstrap code
+{/* <div>
+
+{employeeDetails.map(each=>
+{
+ return(
+   <>
+   <CustomRectangleCard title={each.name} text={each.designation}/>
+   </>
+ )
+
+}
+)
+} */}
+// </div>
+
+
+
+
+{/* <CustomRectangleCard title={"hari"} text={"software engineer"}/> */}
+
+
+// external and external module styles
+
+{/* <CustomButton/>  
+<div className="card">
+ <h5>hari</h5>
+</div>
+
+<div className={style.card}>
+ <h5>hari</h5>
+</div>
+
+<Greeting/> */}
+
+
+
+
+
+
+
+
+// {
+//   [{name:"hari",role:"software developer"},{name:"jaya",role:"business man"},{name:"satish",role:"software manager"}].map(eachName=>{
+//    const {name,role}=eachName
+//    return(
+//    <Greeting text={`i am ${role}`}>{"This is " +(name)}</Greeting>
+//      )
+
+//   })
+//   }
+
+//   <Hari/>
+//   <Krishna/>
+
+
+
+
+
 
 
 
